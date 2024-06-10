@@ -1,0 +1,27 @@
+{
+  "name": "shop-18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node store-18-backend/index.js",
+    "dev": "nodemon store-18-backend/index.js",
+    "data:import": "node store-18-frontend/products.data.ts",
+    "build": "npm install && npm install --prefix store-18-frontend && ng build --prod store-18-frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "morgan": "^1.10.0",
+    "stripe": "^15.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
